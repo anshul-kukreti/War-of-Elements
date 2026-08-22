@@ -1,0 +1,265 @@
+body {
+  background-color : rgb(7, 7, 27);
+  color : white;
+  margin-left : 50px;
+}
+
+.header {
+  margin : 10px 0 0 50px;
+  margin : 0 0 40px 100px;
+}
+
+.logo {
+  height : 150px;
+  border-radius : 50px;
+}
+
+.game-layout {
+  display : flex;
+  align-items : flex-start;
+  gap : 80px;
+}
+
+.button-container {
+  position : relative;
+  width : 500px;
+
+  height : 450px;
+  margin-bottom : 50px;
+
+  display : flex;
+  align-items : flex-start;
+  gap : 50px;
+}
+
+.button-container button {
+  position : absolute;
+  border : none;
+
+  background : transparent;
+  cursor : pointer;
+}
+
+.button-name {
+  font-size : 20px;
+  background : none;
+
+  color : white;
+  position : absolute;
+
+  bottom : -25px;
+  left : 45px;
+
+  opacity : 0;
+  transition : opacity 0.9s;
+  pointer-events : none;
+}
+
+.fire-button:hover .button-name,
+.water-button:hover .button-name,
+.wind-button:hover .button-name,
+.electric-button:hover .button-name,
+.grass-button:hover .button-name {
+  opacity : 1;
+}
+
+.button-container button:active {
+  filter : brightness(0.8);
+  transform : scale(0.95);
+}
+
+button img {
+  width : 110px;
+  display : block;
+  border-radius : 100px;
+}
+
+.fire-button,
+.water-button,
+.electric-button,
+.wind-button,
+.grass-button {
+  position : absolute;
+}
+
+.fire-button {
+  top : 20px;
+  left : 190px;
+}
+
+.water-button {
+  top : 160px;
+  left : 20px;
+}
+
+.result {
+  padding : 10px;
+  background-color : rgb(118, 69, 69);
+
+  color : rgb(0, 0, 0);
+  font-size : 25px;
+
+  text-decoration : underline;
+  position : absolute;
+
+  top : 210px;
+  left : 50%;
+  transform : translateX(-50%);
+}
+
+.electric-button {
+  top : 160px;
+  right : 20px;
+}
+
+.wind-button {
+  bottom : 10px;
+  left : 100px;
+}
+
+.grass-button {
+  bottom : 10px;
+  right : 100px;
+}
+
+img {
+  height : 110px;
+}
+
+.moves-section {
+  display : flex;
+  flex-direction : row;
+
+  align-items : center;
+  justify-content : center;
+
+  gap : 50px;
+  margin-top : 40px;
+}
+
+.move-row img {
+  height : 80px;
+}
+
+
+.final-result {
+  font-size : 30px;
+  font-weight : 800;
+
+  text-decoration : underline;
+  margin-top : 20px;
+}
+
+.your-move,
+.opponent-move {
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+}
+
+.your-score,
+.opponent-score,
+.draw,
+.game-count {
+  display : inline;
+  font-size : 20px;
+
+  margin : 0 40px 0px 0;
+  text-decoration : underline;
+}
+
+.reset-button {
+  display : block;
+  font-size : 30px;
+
+  border-radius : 10px;
+  background-color : #6d28d9;
+
+  color : white;
+  border : none;
+
+  cursor : pointer;
+  transition : 0.2 ease;
+  margin-top : 40px;
+}
+
+.reset-button:hover {
+  background-color : #7c3aed;
+  transform : scale(1.05);
+}
+
+.reset-button:active {
+  background-color : #5b21b6;
+  transform : scale(0.95);
+}
+
+.rules {
+  font-size : 30px;
+  font-weight : 800;
+  text-decoration : underline;
+}
+
+li {
+  margin-bottom : 20px;
+  font-size : 18px;
+}
+
+.rules-fire {
+  background-color : orange;
+  display : inline;
+
+  border : solid rgb(122, 118, 118);
+  border-radius : 10px;
+
+  padding : 5px;
+  font-size : 20px;
+  color : black;
+}
+
+.rules-water {
+  background-color : blue;
+  display : inline;
+
+  border : solid rgb(122, 118, 118);
+  border-radius : 10px;
+
+  padding : 5px;
+  font-size : 20px;
+  color : black;
+}
+
+.rules-grass {
+  background-color : green;
+  display : inline;
+
+  border : solid rgb(122, 118, 118);
+  border-radius : 10px;
+
+  padding : 5px;
+  font-size : 20px;
+  color : black;
+}
+
+.rules-electric {
+  background-color : yellow;
+  display : inline;
+   
+  border : solid rgb(122, 118, 118);
+  border-radius : 10px;
+
+  padding : 5px;
+  font-size : 20px;
+  color : black;
+}
+
+.rules-wind {
+  background-color : rgb(190, 193, 190);
+  display : inline;
+
+  border : solid rgb(122, 118, 118);
+  border-radius : 10px;
+
+  padding : 5px;
+  font-size : 20px;
+  color : black;
+}

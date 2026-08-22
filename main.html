@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>
+      War of Elements.
+   </title>
+
+   <link rel="stylesheet" href="main.css">
+
+</head>
+
+
+<body>
+   
+   <div class="header">
+      <img class="logo" src="images/logo.jpeg">
+   </div>
+
+   <div class="game-layout">
+      <div class="button-container">
+         <button class="fire-button js-fire-button">
+            <img src="images/fire.png" alt="fire">
+            <div class="button-name">Fire</div>
+         </button>
+
+         <button class="water-button js-water-button">
+            <img src="images/water.png" alt="water">
+            <div class="button-name">Water</div>
+         </button>
+
+         <div class="result js-result">Click any Button</div>
+
+         <button class="electric-button js-electric-button">
+            <img src="images/electric.png" alt="electric">
+            <div class="button-name">Electric</div>
+         </button>
+
+         <button class="wind-button js-wind-button">
+            <img src="images/wind.png" alt="wind">
+            <div class="button-name">Wind</div>
+         </button>
+
+         <button class="grass-button js-grass-button">
+            <img src="images/grass.png" alt="grass">
+            <div class="button-name">Grass</div>
+         </button>
+      </div>
+
+      <div class="moves-section">
+         <div class="move-row">
+            <h2>Your Move</h2>
+            <div class="your-move js-your-move"></div>
+         </div>
+
+         <div class="move-row">
+            <h2>Opponent Move</h2>
+            <div class="opponent-move js-opponent-move"></div>
+         </div>
+
+         <div class="result-box">
+            <h2>Result</h2>
+            <div class="final-result js-final-result"></div>
+         </div>
+      </div>
+   </div>
+
+   <p class="game-count js-game-count">Game Count: 0</p>
+
+   <p class="your-score js-your-score">Your Score: 0</p>
+
+   <p class="opponent-score js-opponent-score">Opponent Score: 0</p>
+
+   <p class="draw js-draw">Draw: 0</p>
+
+   <button class="reset-button js-reset-button">
+      Reset Score
+   </button>
+
+   <p class="rules">Rules ?</p>
+
+   <ul>
+      <li>
+         <p class="rules-fire">Fire</p>
+         beats
+         <p class="rules-grass">Grass</p>
+         and
+         <p class="rules-wind">Wind</p>
+      </li>
+
+      <li>
+         <p class="rules-water">Water</p>
+         beats
+         <p class="rules-fire">Fire</p>
+         and
+         <p class="rules-electric">Electric</p>
+      </li>
+
+      <li>
+         <p class="rules-grass">Grass</p>
+         beats
+         <p class="rules-water">Water</p>
+         and
+         <p class="rules-electric">Electric</p>
+      </li>
+
+      <li>
+         <p class="rules-electric">Electric</p>
+         beats
+         <p class="rules-fire">Fire</p>
+         and
+         <p class="rules-wind">Wind</p>
+      </li>
+
+      <li>
+         <p class="rules-wind">Wind</p>
+         beats
+         <p class="rules-water">Water</p>
+         and
+         <p class="rules-grass">Grass</p>
+      </li>
+
+      <li>if the elements are same, the round ends in a draw.</li>
+      <li>Winner earns 1 point.</li>
+   </ul>
+
+   <script src="main.js"></script>
+
+</body>
+
+</html>
