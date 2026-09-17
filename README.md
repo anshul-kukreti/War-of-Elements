@@ -5,6 +5,7 @@ A simple and interactive elemental battle game built using HTML, CSS and JavaScr
 🎮 About
 
 Choose an element and battle against the computer. Each element has its own strength and weakness, making every round a quick strategic challenge.
+![War of Elements Preview](game-preview.png)
 
 ✨ Features
 
